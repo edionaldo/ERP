@@ -19,7 +19,7 @@ namespace ERP.API.Controllers
             _logger = logger;
         }
 
-        // localhost:5000/api/weatherforecast
+        // localhost:5000/api/values
         [HttpGet]
         public ActionResult<IEnumerable<Evento>> Get()
         {
@@ -43,7 +43,7 @@ namespace ERP.API.Controllers
             };
         }
         
-        // localhost:5000/api/weatherforecast/2
+        // localhost:5000/api/values/2
         [HttpGet("{id}")]
         public ActionResult<Evento> GetAction(int id)
         {
